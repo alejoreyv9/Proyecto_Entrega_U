@@ -1,0 +1,120 @@
+/* Punto 4 */
+.p4_azul {
+  color: blue;
+}
+.p4_rojo {
+  color: red;
+}
+
+/* Punto 5 */
+
+.p5_green {
+  text-decoration: underline;
+  color: green;
+}
+.p5_red_tex {
+  color: red;
+}
+
+.p5_lineaCua {  /* Realiza lineas arriba y abajo */
+  text-decoration: underline overline;
+}
+.p5_grandeFunt {
+  font-size: 35px;
+  font-weight: bold;  /* la pone negrita */
+}
+
+.p5_azulTex {
+  color: blue;
+}
+.p5_rojoTex {
+  color: red;
+}
+
+
+/* Punto 6 */
+
+.p6_marca {
+  font-size: 25px;
+  color: rgb(231, 231, 20);
+  display: block;
+}
+
+.p6_as {
+  font-size: 25px;
+  color: purple;
+}
+
+
+/* Punto 7 */
+
+.p7_menu {
+  background-color: pink;
+  width: 35%;
+  text-align: center;
+}
+
+.p7_menu ul {
+  display: inline-flex;  /* para que los tome en Horizontal */
+}
+
+.p7_menu li:hover {
+  background-color: blue;
+}
+
+.p7_menu li {
+  padding: 10px ;
+  list-style: none; /* Para quitar los puntos */
+}
+
+.p7_menu a {
+  color: white;
+}
+
+
+/* Punto 8 */
+
+.p8_tablaAmarill {
+  background-color: yellow;
+  border: 1px dotted;
+  border-bottom: 2px red dashed;
+  border-spacing: 0px;
+  width: 43%;
+}
+.p8_letrasColorRojo th {
+  color: red;
+  font-size: italic;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.p8_letrasColorRojo th::first-letter { /* LLama a la primer letra en cursiva */
+  font-size: 20px;
+  font-weight: bold;
+}
+.p8_tablaAmarill td  {
+  border: 1px dotted;
+}
+
+.p8_tablaAmarill tr {
+  padding: 0px;
+  margin: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
