@@ -1,0 +1,11 @@
+body {
+ background-color: blue;
+}
+
+
+.homeIcono {
+ position: absolute;
+ top: 40px;
+ right: 150px;
+ width: 50px;
+}

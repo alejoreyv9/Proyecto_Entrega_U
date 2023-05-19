@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital@0;1&display=swap');
+
+body {
+ background: url(../img/FondoImagen.jpg);
+ background-size: cover;
+ font-family: 'Mulish', sans-serif;
+}
+
+/* Seccion de titulo */
+
+header {
+ height: 100px;
+ margin: 100px 0;
+}
+
+
+
+.descriptionTitulo {
+ width: 940px;
+ margin: -50px auto;
+ text-align: center;
+ color: white;
+}
+
+
+
+
+/* Diseno se Selecciones */
+
+header .descriptionTitulo h1 {
+ font-size: 30px;
+}
+
+header .descriptionTitulo p {
+ font-size: 20px;
+}
+
+
+#seccionSeleccion {
+ width: 940px;
+ margin: 0 auto;
+ color: white;
+}
+
+#seccionSeleccion .respuestasTitulo .hrtitulo {
+ margin: 0 0 50px;
+}
+
+#seccionSeleccion .respuestasTitulo h2 {
+ text-align: center;
+ margin: 0 0 30px;
+ font-size: 30px;
+}
+
+#seccionSeleccion .respuestasTitulo .selecciones {
+ width: 940px;
+ margin: 25px 0;
+ background-color: #86ABA1;
+ border-radius: 50px;
+
+}
+
+#seccionSeleccion .respuestasTitulo .selecciones a {
+ font-size: 30px;
+ line-height: 60px;
+ text-decoration: none;
+ color: white;
+ padding-left: 100px;
+}
+
+#seccionSeleccion .respuestasTitulo .selecciones:hover {
+ box-shadow: 0px 0px 20px #DFF3E3;
+}
+
+
+/* #seccionSeleccion h2 {
+ padding-bottom: 30px;
+} */

@@ -1,0 +1,13 @@
+body {
+ background-image: url();
+ background-size: cover;
+}
+
+/* Icono de volver al inicio */
+
+.homeIcono {
+ position: absolute;
+ top: 40px;
+ right: 150px;
+ width: 50px;
+}

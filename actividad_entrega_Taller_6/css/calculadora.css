@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital@0;1&display=swap');
+
+
+body {
+ background-image: url('../img/calculadora.png');
+ background-size: inherit;
+ background-color: #9BA4B5;
+ font-family: 'Mulish', sans-serif;
+}
+
+
+/* Logo icono */
+
+.homeIcono {
+ position: absolute;
+ top: 40px;
+ right: 150px;
+ width: 50px;
+}
+
+
+.formularioControl .calculadoraTitulo {
+ text-align: center;
+ margin: 0 0 35px 0;
+ text-shadow: 5px 2px 6px rgb(255, 238, 2);
+ font-size: 50px;
+}
+
+
+.formularioControl {
+ width: 50%;
+ padding: 100px;
+ height: 400px;
+ border-radius: 30px;
+ background-color: #7f8487f1;
+ margin: 7% auto;
+}
+
+label {
+ font-size: 40px;
+}
+
+.formControl {
+ font-size: 30px;
+ margin: 20px 0;
+}
+
+.formularioControl .selecControl {
+ font-size: 30px;
+}
+
+.formularioControl .botonIgual {
+ margin: 20px 0;
+ font-size: 30px;
+ border-radius: 10px;
+ background-color: #F6F7C1;
+}
+
+
+.formularioControl .resultado {
+ text-align: center;
+ margin: 0;
+ font-size: 46px;
+
+}

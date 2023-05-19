@@ -1,0 +1,96 @@
+body {
+ background-image: url('../img/FondoDeMayorYMenor.jpg');
+ background-size: cover;
+}
+
+
+/* Logo para volver al inicio */
+
+.homeIcono {
+ position: absolute;
+ top: 40px;
+ right: 150px;
+ width: 50px;
+}
+
+/* titulo */
+
+.formuTodo .tituloTex .tituloTema {
+ text-align: center;
+ margin: 0 0 35px 0;
+ text-shadow: 5px 2px 6px rgb(165, 196, 134);
+ font-size: 50px;
+}
+
+
+
+
+/* Configuracion general del codigo */
+
+.formuTodo {
+ width: 50%;
+ padding: 100px;
+ height: 400px;
+ border-radius: 30px;
+ background-color: #7f8487f1;
+ margin: 7% auto;
+}
+
+form .formGrupo {
+ text-align: center;
+}
+
+form label {
+ font-size: 40px;
+}
+
+form .formatoInput {
+ font-size: 30px;
+ margin: 20px 0;
+}
+
+
+form .botonEnviar {
+ margin: 20px 0;
+ padding: 5px;
+ font-size: 30px;
+ border-radius: 10px;
+ background-color: rgb(165, 196, 134);
+}
+
+
+
+
+/* Fondo donde sale el resultado */
+
+.formuTodo .fondoResul {
+ margin: 0 100px;
+ background-color: white;
+ border-radius: 10px;
+}
+
+
+.formuTodo .mayorEda,
+.menorEda,
+.novalido {
+ margin: 60px 0;
+ text-align: center;
+}
+
+
+.formuTodo .mayorEda .resaMay {
+ background-color: rgb(140, 228, 140);
+ padding: 10px;
+}
+
+
+
+.formuTodo .menorEda .resaMen {
+ background-color: rgb(228, 227, 140);
+ padding: 10px;
+}
+
+.novalido .resaltNoVali {
+ background-color: rgb(202, 131, 131);
+ padding: 10px;
+}
