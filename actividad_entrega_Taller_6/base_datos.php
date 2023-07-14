@@ -52,7 +52,7 @@ $query2 = mysqli_query($conexion, "SELECT cedula FROM usuarios");
 datos. -->
 
 
- <tabla id="fi" class="tablafilaNombre">
+ <tabla id="tabla" class="tablafilaNombre">
   <thead>
    <tr class="filasTabla">
     <th>#</th>
@@ -108,7 +108,7 @@ datos. -->
 
 <h1 class="tituloInsert">Formulario de Insertar <u>(INSERT)</u></h1>
 
-<form action="" method="POST">
+<form action="back/almacenar_datos.php" method="POST">
   <input type="text" name="nombre" placeholder="Digite el nombre...">
   <input type="text" name="apellido" placeholder="Digite el apellido...">
   <input type="text" name="cedula" placeholder="Digite la cédula...">
@@ -123,7 +123,7 @@ datos. -->
 <h1 class="tituloActua">Formulario de Actualizar <u>(UPDATE)</u></h1>
 
 <form action="" method="POST">
-  <select class="actualizar_id">
+  <select name="id_consulta" >
     <?php
     while ($datos2 = mysqli_fetch_array($query2)) {
       $cedula_query = $datos2['cedula'];
@@ -136,7 +136,7 @@ datos. -->
 
   <!-- Un boton para enviar la actualizacion -->
 
-  <input type="submit" name="actualizar" value="Buscar">
+  <input type="submit" name="buscarAct" value="Buscar">
 </form>
 
 <!-- Se crea el codigo de php -->
@@ -144,9 +144,8 @@ datos. -->
 <?php
 
 
-if (isset($_POST['actualizar'])) {
-  $id_cc_query = $_POST['actualizar_id'];
-  // El echo es para ver y hacer el cambio. y Se crea un format o para poder hacer los cambios
+if (isset($_POST['buscarAct'])) {
+  $id_cc_query = $_POST['id_consulta'];
   echo '
   <h1>Igrese los nuevos datos para la cedula que va actualizar = '.$id_cc_query.'</h1>
   <form action="back/actualizar_datos.php" method="POST">
@@ -159,17 +158,15 @@ if (isset($_POST['actualizar'])) {
 }
 ?>
 
-
-
 <!-- Se hace la realizacion del llamado del script de arriba -->
 
-<script>
-  <script>
+
+  <!-- <script>
     function upperCase() {
       var x = document.getElementById("fname").value
       document.getElementById("fname").value = x.toUpperCase()
     }
-  </script>
-</script>
+  </script> -->
+
 </body>
 </html>
