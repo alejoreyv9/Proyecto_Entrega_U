@@ -1,0 +1,27 @@
+<ul class="lista-ingredientes">
+    <li class="items">6 huevos</li>
+    <li class="items">200 grs de tocino</li>
+    <li class="items">1/2 pimentón</li>
+    <li class="items">1 tomate</li>
+    <li class="items">1 cuchara de aceite</li>
+    <li class="items">150 grs de queso muzzarella</li>
+    <li class="items">Sal a gusto</li>
+</ul>
+
+
+Resultado esperado:
+
+6 huevos
+200 grs de tocino
+1/2 pimentón
+1 tomate
+1 cuchara de aceite
+150 grs de queso muzzarella
+Sal a gusto
+
+
+codigo CSS 
+
+.items:first-child{font-style: italic}
+.items:nth-child(4){font-weight: bold}
+.items:last-child{font-style: italic}
