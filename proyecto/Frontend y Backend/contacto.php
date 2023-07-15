@@ -1,3 +1,10 @@
+<?php
+
+    include 'db/conexion.php';
+
+?>
+
+
 <!DOCTYPE html>
 
 <html>
@@ -5,8 +12,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Contacto - Barbería Alura</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -17,24 +24,28 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="productos.html">Productos</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="contacto.php">Contacto</a></li>
+                    <li><a href="agendas.php">Listado Citas</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+
+    <!-- FORMULARIO DE INSETAR INFORMACION DE AGENDACION DE CITAS -->
+
     <main>
-        <form>
+        <form action="back/almacenarInformacion.php" method="POST">
             <label for="nombreapellido">Nombre y Apellido</label>
-            <input type="text" id="nombreapellido" class="input-padron" required>
+            <input type="text" name="nombreApellido" id="nombreapellido" class="input-padron" required>
 
             <label for="correoelectronico">Correo Electrónico</label>
-            <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
+            <input type="email" name="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
 
             <label for="telefono">Teléfono</label>
-            <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX">
+            <input type="tel" name="telefono" id="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX">
 
             <label for="mensaje">Mensaje</label>
-            <textarea cols="70" rows="10" id="mensaje" class="input-padron" required></textarea>
+            <textarea cols="70" name="descripcion" rows="10" id="mensaje" class="input-padron" required></textarea>
 
             <fieldset>
                 <legend>¿Cómo le gustaría que lo contactemos?</legend>
@@ -53,16 +64,16 @@
             <fieldset>
                 <legend>¿En cuál horario prefiere ser atendido?</legend>
                 <select>
-                    <option>Mañana</option>
-                    <option>Tarde</option>
-                    <option>Noche</option>
+                    <option name="horario">Mañana</option>
+                    <option name="horario">Tarde</option>
+                    <option name="horario">Noche</option>
                 </select>
             </fieldset>
 
-            <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades de la Barbería
+            <label class="checkbox" name="novedades"><input type="checkbox" checked>¿Le gustaría recibir novedades de la Barbería
                 Alura?</label>
 
-            <input type="submit" value="Enviar formulario" class="enviar">
+            <input type="submit" name="agregar" value="Enviar formulario" class="enviar">
 
         </form>
 
