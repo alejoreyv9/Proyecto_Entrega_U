@@ -43,6 +43,21 @@ nav a:hover {
     padding: 50px;
 }
 
+/* Color a letra de producto */
+
+
+.productos .producto-link,
+.producto-link:visited {
+    color: #000;
+    /* Color de texto para los enlaces */
+    text-decoration: none;
+
+}
+
+.productos .producto-link:hover {
+    color: rgb(0, 0, 0)
+}
+
 
 .productos li {
     display: inline-block;
@@ -251,6 +266,10 @@ th {
 
 .btEliminar {
     margin: 30px -5% 30px 0;
+}
+
+.btEliminar button {
+    background-color: rgb(219, 136, 136);
 }
 
 
