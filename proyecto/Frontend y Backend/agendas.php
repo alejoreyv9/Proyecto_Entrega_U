@@ -1,6 +1,6 @@
 <?php
 
- include ('db/conexion.php');
+    include ('db/conexion.php');
 
  $query = mysqli_query($conexion,"SELECT * FROM agendas");
 
@@ -47,10 +47,11 @@
                 <th>Nombre y Apellido</th>
                 <th>Email</th>
                 <th>Telefono</th>
-                <th>Mensaje</th>
+                <th>Peluquero</th>
                 <th>Contactar</th>
                 <th>horario</th>
                 <th>Novedades</th>
+                <th>Acción</th>
             </tr>
             </thead>
             <tbody>
@@ -71,11 +72,17 @@
                     <td>'.$id.'</td>
                     <td>'.$nombreApellido.'</td>
                     <td>'.$email.'</td>
-                    <td>'.$descripcion.'</td>
+                    <td>'.$telefono.'</td>
                     <td>'.$descripcion.'</td>
                     <td>'.$contactar.'</td>
                     <td>'.$horario.'</td>
                     <td>'.$novedades.'</td>
+                    <td>
+                    <form class="btEliminar" action="back/eliminar.php" method="GET">
+                    <input type="hidden" name="id" value="' . $id . '">
+                    <button  type="submit" name="eliminar">Eliminar</button>
+                  </form>
+                    </td>
                 </tr>
                 ';
             }

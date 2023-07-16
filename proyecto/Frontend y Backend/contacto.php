@@ -44,8 +44,8 @@
             <label for="telefono">Teléfono</label>
             <input type="tel" name="telefono" id="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX">
 
-            <label for="mensaje">Mensaje</label>
-            <textarea cols="70" name="descripcion" rows="10" id="mensaje" class="input-padron" required></textarea>
+            <label for="mensaje">Escribir Nombre del Peluquero</label>
+            <textarea cols="70" name="descripcion" rows="10" id="mensaje" class="input-padron" required placeholder="Eje: Peluquero...(nombre)"></textarea>
 
             <fieldset>
                 <legend>¿Cómo le gustaría que lo contactemos?</legend>
